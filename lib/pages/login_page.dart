@@ -1,3 +1,7 @@
+// M. Afada Nur Saiva Syahira
+// MI-2F
+// 2031710168
+import 'package:firebase_flutter1/pages/second.dart';
 import 'package:flutter/material.dart';
 import '../services/authentication.dart';
 import 'first_screen.dart';
@@ -28,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Login App"),
+        title: const Text("2031710168 / M. Afada Nur Saiva Syahira"),
       ),
       body: SafeArea(
         child: Column(
@@ -72,7 +76,31 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               child: ElevatedButton(
                 child: const Text("Login"),
-                onPressed: () {},
+                onPressed: () {
+                  Authentication.signInEmailAndPassword(
+                          email: emailController.text,
+                          password: passController.text)
+                      .then((result) {
+                    if (result == null) {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => EmailScreen(
+                            email: emailController.text,
+                            name: '',
+                          ),
+                        ),
+                      );
+                    } else {
+                      Scaffold.of(context).showSnackBar(SnackBar(
+                        content: Text(
+                          result,
+                          style: TextStyle(fontSize: 16),
+                        ),
+                      ));
+                    }
+                  });
+                },
               ),
             ),
             const SizedBox(

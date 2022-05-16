@@ -1,3 +1,6 @@
+// M. Afada Nur Saiva Syahira
+// MI-2F
+// 2031710168
 import 'package:firebase_flutter1/pages/second.dart';
 import 'package:firebase_flutter1/services/authentication.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +35,7 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Login App"),
+        title: const Text("2031710168 / M. Afada Nur Saiva Syahira"),
       ),
       body: SafeArea(
         child: Form(

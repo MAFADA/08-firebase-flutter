@@ -1,3 +1,6 @@
+// M. Afada Nur Saiva Syahira
+// MI-2F
+// 2031710168
 import 'package:firebase_flutter1/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +12,9 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("2031710168 / M. Afada Nur Saiva Syahira"),
+      ),
       body: Container(
         child: Center(
           child: Column(

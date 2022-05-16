@@ -1,3 +1,6 @@
+// M. Afada Nur Saiva Syahira
+// MI-2F
+// 2031710168
 import 'package:firebase_flutter1/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -6,11 +9,14 @@ import '../services/authentication.dart';
 class EmailScreen extends StatelessWidget {
   const EmailScreen({Key? key, required this.name, required this.email})
       : super(key: key);
-  final String name;
+  final String? name;
   final String email;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("2031710168 / M. Afada Nur Saiva Syahira"),
+      ),
       body: Container(
         child: Center(
           child: Column(
@@ -31,7 +37,7 @@ class EmailScreen extends StatelessWidget {
                     color: Colors.black54),
               ),
               Text(
-                name,
+                name!,
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.deepPurple,
