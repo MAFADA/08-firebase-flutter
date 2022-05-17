@@ -61,7 +61,7 @@ class EmailScreen extends StatelessWidget {
               SizedBox(height: 40),
               ElevatedButton(
                 onPressed: () {
-                  signOutGoogle();
+                  Authentication.signOutEmail();
 
                   Navigator.of(context).pushAndRemoveUntil(
                       MaterialPageRoute(builder: (context) {
